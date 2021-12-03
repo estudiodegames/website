@@ -1,0 +1,324 @@
+/* E eu o declararei para sempre; cantarei louvores ao Deus de Jacó.
+
+Salmos 75:9 */
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body, html{
+	background: rgb(66, 73, 83);
+	font-family: 'Arvo', serif;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar{
+width: 9px;
+height: 9px;
+}
+::-webkit-scrollbar-thumb{
+background: #2c2c54;
+border-radius: 0px;
+height: 9px;
+}
+::-webkit-scrollbar-thumb:hover{
+background: #474787;
+}
+::-webkit-scrollbar-track{
+background: #706FD3;
+border-radius: 0px;
+box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+
+a:link {
+  color: #dff9fb;
+  text-decoration: none;
+}
+
+a:visited {
+ 	color: #dff9fb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dff9fb;
+  text-decoration: none;
+}
+
+a:active {
+  color: #dff9fb;
+  text-decoration: none;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.sobreFundo{
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(conteudo/arches.png) rgba(45, 52, 54,0.8);
+  z-index: 1;
+}
+
+#conteudo_fixo{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: url(conteudo/zig-zag.png) #B3A4ED;
+	position: fixed;
+	float: left;
+
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.30);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.30);
+	z-index: 999;
+
+	animation: menu 0.5s alternate;
+	animation-name: menu
+}
+
+@keyframes menu{
+	0% {left: -100%;}
+  	100% {left: 0%;}
+}
+
+.wadeCollinsSlide{
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 620px;
+	height: 620px;
+	animation: wadeSlide 1s alternate;
+	animation-name: wadeSlide
+}
+
+@keyframes wadeSlide{
+	0% {left: -100%;}
+  	100% {left: 0%;}
+}
+
+
+
+img {
+  width: 100%;
+  max-width: 620px;
+  height: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.loxodonta{
+	font-family: 'Arvo', serif;
+	font-weight: 700;
+	font-size: 2.7rem;
+	margin-top: 40px;
+	margin-left: 250px;
+	color: white;
+	height: 35px;
+	width: 295px;
+	position: absolute;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+	animation: logoLoxodonta 1.2s alternate;
+	animation-name: logoLoxodonta
+}
+
+@keyframes logoLoxodonta{
+	0% {top: -100%;}
+  	100% {top: 0%;}
+}
+
+.estudiodegames{
+	font-family: 'Lexend', sans-serif;
+	font-weight: 400;
+	font-size: 2.1rem;
+	margin-top: 80px;
+	margin-left: 250px;
+	color: white;
+	height: 35px;
+	width: 295px;
+	position: absolute;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+	animation: logoLoxodonta 1.3s alternate;
+	animation-name: logoLoxodonta
+}
+
+/* menu */
+#menu{
+	float: right;
+	margin-top: none;
+	margin-right: 0;
+	position: absolute;
+	bottom: 0;
+	top: none;
+	right: 0;
+	height: 250px;
+	width: 180px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background: none;
+  border-top-left-radius: 5px;
+  position: fixed;
+  height: 150px;
+  z-index: 0;
+  font-size: 1.15rem;
+}
+
+li a {
+  display: block;
+  box-sizing: none;
+  font-family: 'Arvo', serif;
+	font-weight: 100;
+	font-size: 1.1rem;
+  color: #dfe6e9;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background: none;
+  color: white;
+}
+
+li a.blog{
+	color: rgba(9, 132, 227,1.0);
+}
+
+
+li a:hover:not(.active) {
+  color: rgba(255, 255, 255,1.0);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+}
+
+.posicao {
+	padding: 10px;
+	margin: 10px;
+	margin-top: 60px;
+	height: 550px;
+	width: 650px;
+	overflow-y: auto;
+	z-index: 999999;
+}
+
+/* games */
+.icone {
+    height: 56px;
+    width: 56px;
+    top: 15px;
+    margin-right: 10px;
+    margin-left: 3px;
+    /* margin-top: 50px; */
+    /* margin: 2px; */
+    position: relative;
+    border-radius: 10px;
+}
+
+.titulo{
+	font-size: 1.8rem;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+}
+
+.subtitulo{
+	font-size: .85rem;
+	color: #dff9fb;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+}
+
+.descricao{
+	font-size: 1.15rem;
+	color: #dff9fb;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.30);	
+}
+
+.salmos{
+	font-size: 1.2rem;
+	color: #ffda79;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.30);	
+	font-weight: 700;	
+	font-style: italic;
+}
+
+/* sobreposição */
+.sobrePosicao
+{
+	margin: 20px;
+  margin-left: 0;
+  left: 50%;
+	top: 0;
+	height: 95%;
+	width: 45%;
+	background: rgba(45, 52, 54,0.7);
+	position: fixed;
+	padding: 2% auto;
+
+	z-index: 1;
+	border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+
+  animation: sobrePosicao 2s alternate;
+	animation-name: sobrePosicao;
+}
+
+@keyframes sobrePosicao{
+	0% {left: -50%;}
+  	100% {right: 0%;}
+}
+
+.sobrePosicao-content{
+	position: relative;
+ 	top: 0;
+ 	left: 0;
+ 	display: flex;
+ 	width: 100vw;
+	overflow: hidden;
+	padding: 2% auto;
+	box-sizing: border-box;
+	animation: sobrePosicao 3s alternate;
+	animation-name: sobrePosicao;
+}
+
+.sobrePosicao a
+{
+ 	text-decoration: none;
+ 	display: block;
+ 	overflow: hidden;
+ 	transition: 0.3s;
+}
+
+.sobrePosicao a:hover,
+.sobrePosicao a:focus
+{
+  color: #AC9EED;
+}
+
+.sobrePosicao .closebtn
+{
+  position: absolute;
+  right: 10px;
+  height: 50px; width: 60px;
+  transition: 0.5s;
+  background: url(conteudo/voltar.fw.png);
+  margin: 0 auto; justify-content: center; align-items: center;
+  z-index: 999999;
+}
